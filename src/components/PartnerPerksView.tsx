@@ -106,7 +106,7 @@ export const PartnerPerksView: React.FC<PartnerPerksViewProps> = ({
 
   return (
     <div className="space-y-8 text-slate-800">
-      {/* Top Banner (SmartTravel Deals Format) */}
+      {/* Top Banner (Trip.com Singapore Deals Format) */}
       <div className="bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 rounded-3xl p-6 sm:p-8 text-white shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2 mb-1.5">
@@ -114,7 +114,7 @@ export const PartnerPerksView: React.FC<PartnerPerksViewProps> = ({
               <Gift className="w-6 h-6" />
             </span>
             <h2 className="text-2xl font-black tracking-tight">
-              SmartTravel Partner Deals & Promo Codes
+              Trip.com Partner Deals & Promo Codes
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-blue-100 max-w-2xl leading-relaxed">
@@ -129,7 +129,7 @@ export const PartnerPerksView: React.FC<PartnerPerksViewProps> = ({
         </div>
       </div>
 
-      {/* Coupon Grid (SmartTravel Voucher Ticket Card Style) */}
+      {/* Coupon Grid (Trip.com Voucher Ticket Card Style) */}
       <div>
         <h3 className="text-lg font-black text-slate-900 mb-4 flex items-center gap-2">
           <Percent className="w-5 h-5 text-blue-600" />
@@ -219,7 +219,7 @@ export const PartnerPerksView: React.FC<PartnerPerksViewProps> = ({
       {/* Strategic Partners Section (Canvas Page 1) */}
       <div className="pt-4">
         <h3 className="text-lg font-black text-slate-900 mb-2">
-          SmartTravel Strategic Alliance Network (Canvas Page 1)
+          Trip.com Strategic Alliance Network (Canvas Page 1)
         </h3>
         <p className="text-xs text-slate-500 mb-5">
           How our strategic integrations provide competitive advantage and end-to-end travel peace of mind:

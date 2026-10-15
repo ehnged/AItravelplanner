@@ -66,13 +66,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-xs font-sans text-slate-800">
-      {/* 1. SmartTravel Singapore Top Utility Bar */}
+      {/* 1. Trip.com Singapore Top Utility Bar */}
       <div className="bg-slate-50 border-b border-slate-100 px-4 sm:px-6 lg:px-8 py-1.5 text-xs text-slate-600">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <span className="font-semibold text-blue-700 flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-              SmartTravel Singapore
+              Trip.com Singapore
             </span>
             <span className="hidden sm:inline text-slate-400">|</span>
             <span className="hidden sm:inline text-slate-500">
@@ -103,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     </div>
                   </div>
                   <p className="text-[11px] font-bold text-slate-800 mt-2">Scan to Get App</p>
-                  <p className="text-[10px] text-slate-500">SmartTravel Singapore Mobile</p>
+                  <p className="text-[10px] text-slate-500">Trip.com Singapore Mobile</p>
                 </div>
               )}
             </div>
@@ -162,7 +162,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* 2. Main Header with Brand Logo & Product Icons */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
-          {/* Logo (SmartTravel format) */}
+          {/* Logo (sg.trip.com format) */}
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-1.5 cursor-pointer" onClick={() => setActiveTab('itinerary')}>
               <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-600 text-white shadow-md shadow-blue-600/30">
@@ -171,7 +171,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <div className="flex flex-col">
                 <div className="flex items-center gap-1">
                   <span className="text-xl font-black tracking-tight text-blue-600">
-                    Smart<span className="text-slate-900">Travel</span>
+                    Trip<span className="text-slate-900">.com</span>
                   </span>
                   <span className="text-[9px] font-black uppercase tracking-wider bg-blue-100 text-blue-700 px-1.5 py-0.2 rounded font-mono">
                     SG
@@ -184,7 +184,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Product Category Tabs (SmartTravel signature style) */}
+          {/* Product Category Tabs (Trip.com signature style) */}
           <nav className="hidden lg:flex items-center gap-1">
             {mainCategories.map((item) => {
               const Icon = item.icon;

@@ -32,7 +32,7 @@ export const DestinationEssentials: React.FC<DestinationEssentialsProps> = ({
 }) => {
   return (
     <div className="space-y-6 text-slate-800">
-      {/* Top Advisory Banner (SmartTravel Singapore Travel Advisories) */}
+      {/* Top Advisory Banner (Trip.com Singapore Travel Advisories) */}
       <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-xs">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100">
           <div className="flex items-center gap-3">

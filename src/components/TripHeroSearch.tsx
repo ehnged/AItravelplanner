@@ -89,7 +89,7 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
 
   return (
     <div className="relative mb-8">
-      {/* Background Hero Banner in SmartTravel Royal Blue / Scenic Aesthetic */}
+      {/* Background Hero Banner in Trip.com Royal Blue / Scenic Aesthetic */}
       <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-3xl bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-800 shadow-xl">
         {/* Subtle Scenic travel backdrop overlay */}
         <img
@@ -102,7 +102,7 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
         <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 lg:px-16 text-white z-10 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-2 self-start border border-white/30 text-amber-200">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            <span>SmartTravel Singapore • TripGenie AI Travel Engine</span>
+            <span>Trip.com Singapore • TripGenie AI Travel Engine</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight drop-shadow-md">
@@ -114,7 +114,7 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
         </div>
       </div>
 
-      {/* Floating White Booking Card (Classic SmartTravel Signature Box) */}
+      {/* Floating White Booking Card (Classic sg.trip.com Signature Box) */}
       <div className="relative max-w-6xl mx-auto -mt-20 sm:-mt-24 px-4 sm:px-6 z-20">
         <div className="bg-white rounded-3xl shadow-2xl border border-slate-200/80 p-5 sm:p-7 text-slate-800">
           {/* Top Tabs inside Booking Card */}
@@ -253,7 +253,7 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
                   </div>
                 </div>
 
-                {/* Primary Action Button (SmartTravel signature royal blue button) */}
+                {/* Primary Action Button (Trip.com signature royal blue button) */}
                 <button
                   type="submit"
                   disabled={isSearching}
@@ -274,7 +274,7 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
               </div>
             </div>
 
-            {/* Popular Destination Chips (SmartTravel style quick search inspiration) */}
+            {/* Popular Destination Chips (Trip.com style quick search inspiration) */}
             <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100 text-xs">
               <div className="flex flex-wrap items-center gap-1.5">
                 <span className="text-slate-400 font-semibold text-[11px] uppercase tracking-wider">
@@ -361,11 +361,11 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
             )}
           </form>
 
-          {/* SmartTravel Trust Strip */}
+          {/* Trip.com Trust Strip */}
           <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-[11px] text-slate-500">
             <div className="flex items-center gap-1.5 text-emerald-700 font-semibold">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>SmartTravel Guarantee • Verified Partners (Singapore Airlines, Klook, Allianz)</span>
+              <span>Trip.com Guarantee • Verified Partners (Singapore Airlines, Klook, Allianz)</span>
             </div>
             <div className="flex items-center gap-3">
               <span>✓ Instant E-Pass Issuance</span>

@@ -68,7 +68,7 @@ function generateFallbackTrip(
             : 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
           rating: 4.9,
           reviewCount: 2840,
-          tags: ['Instant Check-in', 'Free Cancellation', 'SmartTravel Preferred'],
+          tags: ['Instant Check-in', 'Free Cancellation', 'Trip.com Preferred'],
           insiderTip: 'Show your WanderPulse mobile booking voucher for complimentary high-floor upgrade.',
           partnerBadge: {
             partnerName: 'Marriott Bonvoy / Airbnb Luxe',
@@ -186,7 +186,7 @@ function generateFallbackTrip(
             : 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80',
           rating: 4.9,
           reviewCount: 3890,
-          tags: ['Priority Entry', 'Curated Guide', 'SmartTravel Exclusive'],
+          tags: ['Priority Entry', 'Curated Guide', 'Trip.com Exclusive'],
           partnerBadge: {
             partnerName: 'Local Bureau of Tourism',
             perk: 'Official Tourist Pass Partner Discount',
@@ -883,6 +883,7 @@ Keep answers under 3 paragraphs with bullet points if helpful.`
   }
 });
 
+// Vite middleware in dev or static files in production
 async function startServer() {
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve(__dirname, 'dist')));
@@ -902,4 +903,7 @@ async function startServer() {
   });
 }
 
-startServer();
+startServer().catch((err) => {
+  console.error('Failed to start server:', err);
+});
+

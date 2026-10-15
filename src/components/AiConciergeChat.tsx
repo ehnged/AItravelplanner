@@ -130,7 +130,7 @@ export const AiConciergeChat: React.FC<AiConciergeChatProps> = ({
 
   return (
     <div className="fixed inset-0 sm:inset-auto sm:right-6 sm:bottom-6 sm:w-96 sm:h-[620px] z-50 flex flex-col bg-white border border-slate-200 sm:rounded-3xl shadow-2xl overflow-hidden font-sans">
-      {/* Header (SmartTravel TripGenie Royal Blue Theme) */}
+      {/* Header (Trip.com TripGenie Royal Blue Theme) */}
       <div className="bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 p-4 text-white flex items-center justify-between shadow-xs">
         <div className="flex items-center gap-2.5">
           <div className="relative flex items-center justify-center w-10 h-10 rounded-2xl bg-white text-blue-600 shadow-md">
@@ -141,7 +141,7 @@ export const AiConciergeChat: React.FC<AiConciergeChatProps> = ({
             <h3 className="text-sm font-black flex items-center gap-1.5">
               <span>TripGenie AI</span>
               <span className="text-[9px] bg-white/20 text-white font-extrabold px-1.5 py-0.2 rounded uppercase">
-                SmartTravel
+                Trip.com
               </span>
             </h3>
             <p className="text-[11px] text-blue-100">

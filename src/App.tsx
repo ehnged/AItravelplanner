@@ -213,7 +213,7 @@ export default function App() {
         </div>
       )}
 
-      {/* Main Navbar (SmartTravel Singapore Format) */}
+      {/* Main Navbar (Trip.com Singapore Format) */}
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -234,7 +234,7 @@ export default function App() {
         onClaimDailyCoins={handleClaimDailyCoins}
       />
 
-      {/* Hero Booking Engine (Signature SmartTravel Format) */}
+      {/* Hero Booking Engine (Signature sg.trip.com Format) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 w-full">
         <TripHeroSearch
           onSearch={handleGeneratePlan}
@@ -276,7 +276,7 @@ export default function App() {
                     </span>
                     <div>
                       <h2 className="text-2xl font-black text-slate-900 tracking-tight">
-                        SmartTravel Live Agile Trip Controller
+                        Trip.com Live Agile Trip Controller
                       </h2>
                       <p className="text-xs text-slate-500">
                         Canvas Page 3: "App is agile to be able adjust the itinerary/bookings accordingly during the journey - depending on mood, weather, etc."
@@ -378,7 +378,7 @@ export default function App() {
         )}
       </main>
 
-      {/* Signature SmartTravel Singapore Footer */}
+      {/* Signature Trip.com Singapore Footer */}
       <footer className="mt-auto border-t border-slate-200 bg-white py-12 px-4 sm:px-6 lg:px-8 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto space-y-8">
           {/* Top Footer Columns */}
@@ -446,11 +446,11 @@ export default function App() {
           {/* Bottom Copyright Row */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
             <div className="flex items-center gap-2">
-              <span className="font-black text-blue-600 text-sm">Smart<span className="text-slate-900">Travel</span> SG</span>
+              <span className="font-black text-blue-600 text-sm">Trip<span className="text-slate-900">.com</span> SG</span>
               <span>• WanderPulse AI Holiday Planner (Canvas Artifact Implementation)</span>
             </div>
             <div>
-              <span>© 2026 SmartTravel Singapore Pte. Ltd. All rights reserved. SmartTravel is part of SmartTravel Group.</span>
+              <span>© 2026 Trip.com Travel Singapore Pte. Ltd. All rights reserved. Trip.com is part of Trip.com Group.</span>
             </div>
           </div>
         </div>
@@ -484,7 +484,7 @@ export default function App() {
         currentTier={currentTier}
         onSelectTier={(tier) => {
           setCurrentTier(tier);
-          showNotification(`SmartTravel Tier updated to: ${tier.toUpperCase()}`);
+          showNotification(`Trip.com Tier updated to: ${tier.toUpperCase()}`);
         }}
       />
     </div>
