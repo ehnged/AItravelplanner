@@ -15,7 +15,6 @@ import {
   Train,
   Car,
   Bot,
-  HelpCircle,
   Smartphone,
   Coins,
   Crown,
@@ -108,14 +107,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
             </div>
 
-            {/* Help & 24/7 Support */}
-            <button
-              onClick={onOpenChat}
-              className="hover:text-blue-600 flex items-center gap-1 cursor-pointer"
-            >
-              <HelpCircle className="w-3.5 h-3.5 text-slate-500" />
-              <span className="hidden sm:inline">24/7 Support</span>
-            </button>
 
             {/* Currency Selector (SGD, USD, EUR, etc.) */}
             <div className="flex items-center gap-1 text-slate-700 font-medium">
