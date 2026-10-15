@@ -113,7 +113,7 @@ export const DigitalPassWallet: React.FC<DigitalPassWalletProps> = ({
             </span>
           </div>
           <p className="text-xs text-slate-500">
-            Trip.com Singapore integrated wallet: Airline boarding pass, Hotel smart lock voucher, Attraction FastPasses, Subway QR code, and Allianz Travel Shield.
+            SmartTravel.com integrated wallet: Airline boarding pass, Hotel smart lock voucher, Attraction FastPasses, Subway QR code, and Allianz Travel Shield.
           </p>
         </div>
 
@@ -236,7 +236,7 @@ export const DigitalPassWallet: React.FC<DigitalPassWalletProps> = ({
                 {React.createElement(getPassIcon(selectedPass.type), { className: 'w-7 h-7' })}
               </div>
               <p className="text-[11px] font-extrabold uppercase tracking-wider text-blue-600">
-                Official Trip.com E-Ticket & Pass
+                Official SmartTravel.com E-Ticket & Pass
               </p>
               <h3 className="text-xl font-extrabold text-slate-900 mt-1">
                 {selectedPass.title}

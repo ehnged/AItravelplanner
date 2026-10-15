@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-4">
             <span className="font-semibold text-blue-700 flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-              Trip.com Singapore
+              SmartTravel.com Singapore
             </span>
             <span className="hidden sm:inline text-slate-400">|</span>
             <span className="hidden sm:inline text-slate-500">
@@ -102,7 +102,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     </div>
                   </div>
                   <p className="text-[11px] font-bold text-slate-800 mt-2">Scan to Get App</p>
-                  <p className="text-[10px] text-slate-500">Trip.com Singapore Mobile</p>
+                  <p className="text-[10px] text-slate-500">SmartTravel.com Mobile</p>
                 </div>
               )}
             </div>
@@ -162,14 +162,14 @@ export const Navbar: React.FC<NavbarProps> = ({
               <div className="flex flex-col">
                 <div className="flex items-center gap-1">
                   <span className="text-xl font-black tracking-tight text-blue-600">
-                    Trip<span className="text-slate-900">.com</span>
+                    SmartTravel<span className="text-slate-900">.com</span>
                   </span>
                   <span className="text-[9px] font-black uppercase tracking-wider bg-blue-100 text-blue-700 px-1.5 py-0.2 rounded font-mono">
                     SG
                   </span>
                 </div>
                 <span className="text-[10px] font-medium text-slate-500 -mt-1">
-                  TripGenie AI Holiday Planner
+                  SmartTravel AI Holiday Planner
                 </span>
               </div>
             </div>

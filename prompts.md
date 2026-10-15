@@ -48,6 +48,20 @@ This document collates all prompts executed in the session, including user instr
 
 ---
 
+### Prompt 4: Rebrand to SmartTravel.com, Git Push & Prompts Update
+**Prompt:**
+> "rename the site to SmartTravel.com
+> 
+> git push <GITHUB_TOKEN>@https://github.com/ehnged/AItravelplanner.git HEAD:hafidz
+> collate all the prompts that you have ran so far and store it in a prompts.md"
+
+**Context & Actions Executed:**
+- Rebranded site to SmartTravel.com across `index.html` (page title, meta descriptions, and OpenGraph tags) and UI components (`Navbar`, `App`, `TripHeroSearch`, `DynamicAdjustBar`, `AiConciergeChat`, `PricingModal`, `DigitalPassWallet`, `PartnerPerksView`, `ItineraryView`).
+- Updated `prompts.md` with complete session prompt collation and masked credentials.
+- Committed changes and pushed to branch `hafidz`.
+
+---
+
 ## 2. Core Application AI Prompts (Gemini 3.8 Flash)
 
 Below are the internal prompt templates used by the server to drive the AI features:

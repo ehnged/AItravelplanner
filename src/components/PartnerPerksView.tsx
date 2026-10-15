@@ -114,7 +114,7 @@ export const PartnerPerksView: React.FC<PartnerPerksViewProps> = ({
               <Gift className="w-6 h-6" />
             </span>
             <h2 className="text-2xl font-black tracking-tight">
-              Trip.com Partner Deals & Promo Codes
+              SmartTravel.com Partner Deals & Promo Codes
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-blue-100 max-w-2xl leading-relaxed">
@@ -219,7 +219,7 @@ export const PartnerPerksView: React.FC<PartnerPerksViewProps> = ({
       {/* Strategic Partners Section (Canvas Page 1) */}
       <div className="pt-4">
         <h3 className="text-lg font-black text-slate-900 mb-2">
-          Trip.com Strategic Alliance Network (Canvas Page 1)
+          SmartTravel.com Strategic Alliance Network
         </h3>
         <p className="text-xs text-slate-500 mb-5">
           How our strategic integrations provide competitive advantage and end-to-end travel peace of mind:

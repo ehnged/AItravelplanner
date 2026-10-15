@@ -102,7 +102,7 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
         <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 lg:px-16 text-white z-10 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-2 self-start border border-white/30 text-amber-200">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            <span>Trip.com Singapore • TripGenie AI Travel Engine</span>
+            <span>SmartTravel.com Singapore • AI Travel Engine</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight drop-shadow-md">
@@ -365,7 +365,7 @@ export const TripHeroSearch: React.FC<TripHeroSearchProps> = ({
           <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-[11px] text-slate-500">
             <div className="flex items-center gap-1.5 text-emerald-700 font-semibold">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Trip.com Guarantee • Verified Partners (Singapore Airlines, Klook, Allianz)</span>
+              <span>SmartTravel.com Guarantee • Verified Partners (Singapore Airlines, Klook, Allianz)</span>
             </div>
             <div className="flex items-center gap-3">
               <span>✓ Instant E-Pass Issuance</span>

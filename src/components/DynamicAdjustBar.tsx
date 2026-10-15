@@ -43,7 +43,7 @@ export const DynamicAdjustBar: React.FC<DynamicAdjustBarProps> = ({
       id: 'low_energy',
       label: '🥱 Low Energy / Slow Pace',
       desc: 'Insert relaxing tea breaks & scenic tranquil garden rests',
-      badge: 'Trip.com Care',
+      badge: 'SmartTravel Care',
       borderClass: 'hover:border-amber-500',
     },
     {
@@ -86,7 +86,7 @@ export const DynamicAdjustBar: React.FC<DynamicAdjustBarProps> = ({
               <Radio className="w-4 h-4 animate-pulse text-blue-600" />
             </span>
             <h3 className="text-base font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-              Trip.com Dynamic Intelligence & Agile Journey Optimizer
+              SmartTravel.com Dynamic Intelligence & Agile Journey Optimizer
               <span className="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                 Canvas Feature
               </span>

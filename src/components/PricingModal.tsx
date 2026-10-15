@@ -98,7 +98,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({
         {/* Modal Header */}
         <div className="text-center max-w-2xl mx-auto mb-8">
           <span className="text-xs font-black uppercase tracking-wider text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
-            Trip.com Rewards & VIP Member Tiers
+            SmartTravel.com Rewards & VIP Member Tiers
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mt-3 tracking-tight">
             Elevate Your Travel with VIP Privileges
@@ -209,7 +209,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({
               <strong className="text-slate-900">Business Model Benchmark:</strong> Target Revenue $1.8M - $3M+ via B2C Subscriptions, Partner Commissions & Corporate Bleisure.
             </span>
           </div>
-          <span className="text-blue-700 font-bold">Trip.com Singapore SSL Secure Checkout</span>
+          <span className="text-blue-700 font-bold">SmartTravel.com SSL Secure Checkout</span>
         </div>
       </div>
     </div>

@@ -276,7 +276,7 @@ export default function App() {
                     </span>
                     <div>
                       <h2 className="text-2xl font-black text-slate-900 tracking-tight">
-                        Trip.com Live Agile Trip Controller
+                        SmartTravel.com Live Agile Trip Controller
                       </h2>
                       <p className="text-xs text-slate-500">
                         Canvas Page 3: "App is agile to be able adjust the itinerary/bookings accordingly during the journey - depending on mood, weather, etc."
@@ -446,11 +446,11 @@ export default function App() {
           {/* Bottom Copyright Row */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
             <div className="flex items-center gap-2">
-              <span className="font-black text-blue-600 text-sm">Trip<span className="text-slate-900">.com</span> SG</span>
-              <span>• WanderPulse AI Holiday Planner (Canvas Artifact Implementation)</span>
+              <span className="font-black text-blue-600 text-sm">SmartTravel<span className="text-slate-900">.com</span> SG</span>
+              <span>• SmartTravel.com AI Holiday Planner</span>
             </div>
             <div>
-              <span>© 2026 Trip.com Travel Singapore Pte. Ltd. All rights reserved. Trip.com is part of Trip.com Group.</span>
+              <span>© 2026 SmartTravel.com Pte. Ltd. All rights reserved.</span>
             </div>
           </div>
         </div>
@@ -484,7 +484,7 @@ export default function App() {
         currentTier={currentTier}
         onSelectTier={(tier) => {
           setCurrentTier(tier);
-          showNotification(`Trip.com Tier updated to: ${tier.toUpperCase()}`);
+          showNotification(`SmartTravel.com Tier updated to: ${tier.toUpperCase()}`);
         }}
       />
     </div>

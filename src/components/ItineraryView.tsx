@@ -368,7 +368,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
             <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
               <div>
                 <span className="text-[10px] font-black uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded">
-                  Trip.com Package Summary
+                  SmartTravel.com Package Summary
                 </span>
                 <h3 className="text-lg font-black text-slate-900 mt-1">
                   {trip.destination}
@@ -444,7 +444,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
             <div className="flex items-center gap-2 mb-2">
               <ShieldCheck className="w-5 h-5 text-blue-700" />
               <h4 className="font-extrabold text-blue-950 text-sm">
-                Trip.com Guarantee & Allianz Shield
+                SmartTravel.com Guarantee & Allianz Shield
               </h4>
             </div>
             <p className="text-slate-600 leading-relaxed mb-3">

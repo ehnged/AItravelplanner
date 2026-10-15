@@ -141,7 +141,7 @@ export const AiConciergeChat: React.FC<AiConciergeChatProps> = ({
             <h3 className="text-sm font-black flex items-center gap-1.5">
               <span>TripGenie AI</span>
               <span className="text-[9px] bg-white/20 text-white font-extrabold px-1.5 py-0.2 rounded uppercase">
-                Trip.com
+                SmartTravel.com
               </span>
             </h3>
             <p className="text-[11px] text-blue-100">
