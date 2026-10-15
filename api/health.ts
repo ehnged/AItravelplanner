@@ -10,8 +10,9 @@ export default async function handler(req: Request, res: Response) {
       uptime: process.uptime(),
       integrations: {
         oneMap: {
-          configured: Boolean(process.env.ONEMAP_API_KEY),
-          endpoint: 'https://www.onemap.gov.sg/api/common/elastic/search',
+          configured: Boolean(process.env.ONEMAP_API_KEY || process.env.ONEMAP_TOKEN),
+          searchEndpoint: 'https://www.onemap.gov.sg/api/common/elastic/search',
+          revGeocodeEndpoint: 'https://www.onemap.gov.sg/api/public/revgeocode',
         },
         ltaBusArrival: {
           configured: Boolean(process.env.LTA_API_KEY || process.env.DATAMALL_API_KEY),

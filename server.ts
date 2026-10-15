@@ -887,11 +887,14 @@ Keep answers under 3 paragraphs with bullet points if helpful.`
 import healthHandler from './api/health.ts';
 import busArrivalHandler from './api/busarrival.ts';
 import oneMapHandler from './api/onemap.ts';
+import revGeocodeHandler from './api/revgeocode.ts';
 
 app.all('/api/health', (req, res) => healthHandler(req, res));
 app.all('/api/busarrival', (req, res) => busArrivalHandler(req, res));
 app.all('/api/onemap', (req, res) => oneMapHandler(req, res));
 app.all('/api/onemap/search', (req, res) => oneMapHandler(req, res));
+app.all('/api/revgeocode', (req, res) => revGeocodeHandler(req, res));
+app.all('/api/onemap/revgeocode', (req, res) => revGeocodeHandler(req, res));
 
 // Vite middleware in dev or static files in production
 async function startServer() {
