@@ -5,6 +5,10 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { GoogleGenAI } from '@google/genai';
 import { TripPlan, DayItinerary, DigitalPass } from './src/types/travel.ts';
+import weatherHandler from './api/weather.ts';
+import forecastHandler from './api/forecast.ts';
+import healthHandler from './api/health.ts';
+import busArrivalHandler from './api/busarrival.ts';
 
 dotenv.config();
 
@@ -15,6 +19,13 @@ const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: '10mb' }));
+
+// Serverless API route connections
+app.all('/api/weather', weatherHandler);
+app.all('/api/forecast', forecastHandler);
+app.all('/api/open-meteo', weatherHandler);
+app.all('/api/health', healthHandler);
+app.all('/api/busarrival', busArrivalHandler);
 
 // Initialize Google Gen AI
 const apiKey = process.env.GEMINI_API_KEY;
