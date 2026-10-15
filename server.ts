@@ -883,6 +883,16 @@ Keep answers under 3 paragraphs with bullet points if helpful.`
   }
 });
 
+// Serverless OneMap SG, Bus Arrival, and Health check endpoints
+import healthHandler from './api/health.ts';
+import busArrivalHandler from './api/busarrival.ts';
+import oneMapHandler from './api/onemap.ts';
+
+app.all('/api/health', (req, res) => healthHandler(req, res));
+app.all('/api/busarrival', (req, res) => busArrivalHandler(req, res));
+app.all('/api/onemap', (req, res) => oneMapHandler(req, res));
+app.all('/api/onemap/search', (req, res) => oneMapHandler(req, res));
+
 // Vite middleware in dev or static files in production
 async function startServer() {
   if (process.env.NODE_ENV === 'production') {
