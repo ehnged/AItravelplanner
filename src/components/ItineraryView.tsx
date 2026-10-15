@@ -105,7 +105,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
 
   return (
     <div className="space-y-6 text-slate-800">
-      {/* 1. Trip.com Days Carousel & Category Filter Bar */}
+      {/* 1. SmartTravel Days Carousel & Category Filter Bar */}
       <div className="bg-white border border-slate-200 rounded-3xl p-4 shadow-sm">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           {/* Days selector tabs */}
@@ -183,7 +183,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
 
       {/* 2. Main Content Grid: Listings (Left) & Sticky Booking Summary (Right) */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
-        {/* Left Column: Trip.com Card-Based Listing (2 cols on lg) */}
+        {/* Left Column: SmartTravel Card-Based Listing (2 cols on lg) */}
         <div className="lg:col-span-2 space-y-4">
           {filteredActivities.map((act) => {
             const CategoryIcon = getCategoryIcon(act.category);
@@ -200,7 +200,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
                 }`}
               >
                 <div className="flex flex-col sm:flex-row">
-                  {/* Photo Thumbnail (Trip.com card style) */}
+                  {/* Photo Thumbnail (SmartTravel card style) */}
                   <div className="sm:w-56 h-48 sm:h-auto relative overflow-hidden bg-slate-100 shrink-0">
                     <img
                       src={
@@ -227,7 +227,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
                   {/* Card Details Area */}
                   <div className="flex-1 p-5 flex flex-col justify-between">
                     <div>
-                      {/* Rating & Trip.com Preferred Tags */}
+                      {/* Rating & SmartTravel Preferred Tags */}
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                         <div className="flex items-center gap-1.5">
                           <span className="flex items-center gap-1 bg-blue-600 text-white text-[11px] font-black px-1.5 py-0.5 rounded">
@@ -286,7 +286,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
                         </span>
                       </div>
 
-                      {/* Trip.com Benefit Tags */}
+                      {/* SmartTravel Benefit Tags */}
                       <div className="flex flex-wrap gap-1.5 mb-3">
                         <span className="text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded">
                           Free Cancellation
@@ -333,7 +333,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
                         <div></div>
                       )}
 
-                      {/* Trip.com Price Display Format */}
+                      {/* SmartTravel Price Display Format */}
                       <div className="text-right">
                         <span className="text-[10px] text-slate-400 line-through mr-1.5">
                           ~${Math.round(act.estimatedCost * 1.25)} {currency}
@@ -361,14 +361,14 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
           })}
         </div>
 
-        {/* Right Column: Sticky Trip.com Booking Summary & Partner Protection */}
+        {/* Right Column: Sticky SmartTravel Booking Summary & Partner Protection */}
         <div className="space-y-5 lg:sticky lg:top-24">
           {/* Trip Summary Card */}
           <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
               <div>
                 <span className="text-[10px] font-black uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded">
-                  Trip.com Package Summary
+                  SmartTravel Package Summary
                 </span>
                 <h3 className="text-lg font-black text-slate-900 mt-1">
                   {trip.destination}
@@ -444,7 +444,7 @@ export const ItineraryView: React.FC<ItineraryViewProps> = ({
             <div className="flex items-center gap-2 mb-2">
               <ShieldCheck className="w-5 h-5 text-blue-700" />
               <h4 className="font-extrabold text-blue-950 text-sm">
-                Trip.com Guarantee & Allianz Shield
+                SmartTravel Guarantee & Allianz Shield
               </h4>
             </div>
             <p className="text-slate-600 leading-relaxed mb-3">

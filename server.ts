@@ -68,7 +68,7 @@ function generateFallbackTrip(
             : 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
           rating: 4.9,
           reviewCount: 2840,
-          tags: ['Instant Check-in', 'Free Cancellation', 'Trip.com Preferred'],
+          tags: ['Instant Check-in', 'Free Cancellation', 'SmartTravel Preferred'],
           insiderTip: 'Show your WanderPulse mobile booking voucher for complimentary high-floor upgrade.',
           partnerBadge: {
             partnerName: 'Marriott Bonvoy / Airbnb Luxe',
@@ -186,7 +186,7 @@ function generateFallbackTrip(
             : 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80',
           rating: 4.9,
           reviewCount: 3890,
-          tags: ['Priority Entry', 'Curated Guide', 'Trip.com Exclusive'],
+          tags: ['Priority Entry', 'Curated Guide', 'SmartTravel Exclusive'],
           partnerBadge: {
             partnerName: 'Local Bureau of Tourism',
             perk: 'Official Tourist Pass Partner Discount',
@@ -883,21 +883,23 @@ Keep answers under 3 paragraphs with bullet points if helpful.`
   }
 });
 
-// Vite middleware in dev or static files in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.resolve(__dirname, 'dist')));
-  app.get('*', (_req, res) => {
-    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-  });
-} else {
-  createViteServer({
-    server: { middlewareMode: true },
-    appType: 'spa',
-  }).then((vite) => {
+async function startServer() {
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve(__dirname, 'dist')));
+    app.get('*', (_req, res) => {
+      res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+    });
+  } else {
+    const vite = await createViteServer({
+      server: { middlewareMode: true },
+      appType: 'spa',
+    });
     app.use(vite.middlewares);
+  }
+
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`WanderPulse AI server listening on http://0.0.0.0:${PORT}`);
   });
 }
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`WanderPulse AI server listening on http://0.0.0.0:${PORT}`);
-});
+startServer();

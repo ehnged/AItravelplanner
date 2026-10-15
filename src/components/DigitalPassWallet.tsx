@@ -77,7 +77,7 @@ export const DigitalPassWallet: React.FC<DigitalPassWalletProps> = ({
       details: {
         Category: newPassType.toUpperCase(),
         Verification: 'Confirmed & Guaranteed',
-        IssuedBy: 'Trip.com Singapore Partner',
+        IssuedBy: 'SmartTravel Singapore Partner',
       },
       status: 'active',
       qrCodeValue: `TC-PASS-${Date.now()}`,
@@ -113,7 +113,7 @@ export const DigitalPassWallet: React.FC<DigitalPassWalletProps> = ({
             </span>
           </div>
           <p className="text-xs text-slate-500">
-            Trip.com Singapore integrated wallet: Airline boarding pass, Hotel smart lock voucher, Attraction FastPasses, Subway QR code, and Allianz Travel Shield.
+            SmartTravel Singapore integrated wallet: Airline boarding pass, Hotel smart lock voucher, Attraction FastPasses, Subway QR code, and Allianz Travel Shield.
           </p>
         </div>
 
@@ -220,7 +220,7 @@ export const DigitalPassWallet: React.FC<DigitalPassWalletProps> = ({
         })}
       </div>
 
-      {/* Full-Screen Digital Pass Modal (Simulates Trip.com E-Ticket View) */}
+      {/* Full-Screen Digital Pass Modal (Simulates SmartTravel E-Ticket View) */}
       {selectedPass && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-xs">
           <div className="relative w-full max-w-md bg-white border border-slate-200 rounded-3xl p-6 sm:p-7 shadow-2xl text-slate-900">
@@ -236,7 +236,7 @@ export const DigitalPassWallet: React.FC<DigitalPassWalletProps> = ({
                 {React.createElement(getPassIcon(selectedPass.type), { className: 'w-7 h-7' })}
               </div>
               <p className="text-[11px] font-extrabold uppercase tracking-wider text-blue-600">
-                Official Trip.com E-Ticket & Pass
+                Official SmartTravel E-Ticket & Pass
               </p>
               <h3 className="text-xl font-extrabold text-slate-900 mt-1">
                 {selectedPass.title}
