@@ -5,6 +5,10 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { GoogleGenAI } from '@google/genai';
 import { TripPlan, DayItinerary, DigitalPass } from './src/types/travel.ts';
+import weatherHandler from './api/weather.ts';
+import forecastHandler from './api/forecast.ts';
+import healthHandler from './api/health.ts';
+import busArrivalHandler from './api/busarrival.ts';
 
 dotenv.config();
 
@@ -16,8 +20,15 @@ const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: '10mb' }));
 
+// Serverless API route connections
+app.all('/api/weather', weatherHandler);
+app.all('/api/forecast', forecastHandler);
+app.all('/api/open-meteo', weatherHandler);
+app.all('/api/health', healthHandler);
+app.all('/api/busarrival', busArrivalHandler);
+
 // Initialize Google Gen AI
-const apiKey = process.env.GEMINI_API_KEY;
+const apiKey = process.env.GEMINI_API_KEY || process.env.API_KEY;
 const ai = apiKey
   ? new GoogleGenAI({
       apiKey,
@@ -884,20 +895,26 @@ Keep answers under 3 paragraphs with bullet points if helpful.`
 });
 
 // Vite middleware in dev or static files in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.resolve(__dirname, 'dist')));
-  app.get('*', (_req, res) => {
-    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-  });
-} else {
-  createViteServer({
-    server: { middlewareMode: true },
-    appType: 'spa',
-  }).then((vite) => {
+async function startServer() {
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve(__dirname, 'dist')));
+    app.get('*', (_req, res) => {
+      res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+    });
+  } else {
+    const vite = await createViteServer({
+      server: { middlewareMode: true },
+      appType: 'spa',
+    });
     app.use(vite.middlewares);
+  }
+
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`WanderPulse AI server listening on http://0.0.0.0:${PORT}`);
   });
 }
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`WanderPulse AI server listening on http://0.0.0.0:${PORT}`);
+startServer().catch((err) => {
+  console.error('Failed to start server:', err);
 });
+
